@@ -1,5 +1,5 @@
 :root {
-    --color1: #48008c;
+    --color1: #333333;
     --color2: #C60000;
     --color3: #8F41D9;
     --color4: #D90000;
@@ -48,7 +48,8 @@ nav img {
     height: 50px;
 }
 
-nav button {
+nav button,
+.home button {
     background-color: var(--color2);
     color: #fff;
     padding: .5em;
@@ -56,30 +57,64 @@ nav button {
     border: none;
 }
 
-nav button:hover {
+nav button:hover,
+.home button:hover {
     background-color: var(--color4);
     cursor: pointer;
 }
 
 .home {
     width: 100%;
-    min-height: 500px;
-    background-image: url('/public/teste.png');
+    min-height: 600px;
+    background-image: url('../public/home.jpg');
     background-size: cover;
     border-bottom-left-radius: 5em;
+    color: var(--color2);
     opacity: 0.8;
 }
 
 .home div {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 5%;
     padding: 1em;
+}
+
+.home button {
+    background-color: var(--color2);
+}
+
+.about {
+    display: flex;
+    margin: 1em;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img {
+    width: 30em;
+    height: 30em;
+    margin: 2em;
+    border-radius: 5em;
+}
+
+.about section {
+    width: 30em;
+    height: 30em;
+    color: #fff;
+}
+.about section>h1{
+    text-align: center;
+    color: var(--color2);
+}
+.about section>p{
+    text-align: justify;
 }
 
 .about,
 .services,
 .clients,
 .contact {
-    min-height: 500px;
+    min-height: 600px;
 }
