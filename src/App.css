@@ -1,5 +1,5 @@
 :root {
-    --color1: #333333;
+    --color1: #312e2e;
     --color2: #C60000;
     --color3: #8F41D9;
     --color4: #D90000;
@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #333;
+    background-color: var(--color1);
 }
 
 nav {
@@ -63,10 +63,17 @@ nav button:hover,
     cursor: pointer;
 }
 
+.home,
+.about,
+.services,
+.clients,
+.contact {
+    min-height: 600px;
+}
+
 .home {
     width: 100%;
-    min-height: 600px;
-    background-image: url('../public/home.jpg');
+    background-image: url('/home.jpg');
     background-size: cover;
     border-bottom-left-radius: 5em;
     color: var(--color2);
@@ -94,9 +101,9 @@ nav button:hover,
 
 .about img {
     width: 30em;
-    height: 30em;
+    height: 25em;
     margin: 2em;
-    border-radius: 5em;
+    border-bottom-right-radius: 5em;
 }
 
 .about section {
@@ -104,17 +111,72 @@ nav button:hover,
     height: 30em;
     color: #fff;
 }
-.about section>h1{
+
+.about section>h1,
+.services h1 {
     text-align: center;
     color: var(--color2);
+    text-transform: uppercase
 }
-.about section>p{
+
+.about section>p {
     text-align: justify;
 }
 
-.about,
-.services,
-.clients,
+.services {
+    background-image: url('/services.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    padding: 1em;
+    border-bottom-left-radius: 5em;
+}
+
+.serviceIcons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em;
+}
+
+.serviceIcons button {
+    width: 25em;
+    height: 15em;
+    margin: 1em;
+    padding: 1em;
+    border: none;
+    background-color: #fff;
+    border-radius: 5em;
+    text-align: center;
+    transition: .5 ease-in-out;
+}
+
+.serviceIcons button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.serviceIcons svg {
+    font-size: 5em;
+    color: var(--color2);
+}
+
 .contact {
-    min-height: 600px;
+    background-image: url('/contact.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    border-bottom-right-radius: 5em;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--color1);
+    width: 12px;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    border-radius: 8px;
+}
+::selection{
+    background-color: var(--color2);
+    color: #fff;
 }
