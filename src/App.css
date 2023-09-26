@@ -14,7 +14,6 @@ body {
 }
 
 nav {
-
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -43,9 +42,9 @@ nav a:hover {
     color: var(--color2);
 }
 
-nav img {
-    width: 100px;
-    height: 50px;
+nav svg {
+    font-size: 3em;
+    color: var(--color2);
 }
 
 nav button,
@@ -61,6 +60,10 @@ nav button:hover,
 .home button:hover {
     background-color: var(--color4);
     cursor: pointer;
+}
+
+nav button>a:hover {
+    color: #fff;
 }
 
 .home,
@@ -82,9 +85,9 @@ nav button:hover,
 
 .home div {
     position: absolute;
-    top: 60%;
-    left: 5%;
     padding: 1em;
+    bottom: 0;
+    margin-bottom: 1em;
 }
 
 .home button {
@@ -113,10 +116,12 @@ nav button:hover,
 }
 
 .about section>h1,
-.services h1 {
+.services h1,
+.contact h1 {
     text-align: center;
     color: var(--color2);
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .about section>p {
@@ -164,6 +169,24 @@ nav button:hover,
     background-size: cover;
     opacity: 0.8;
     border-bottom-right-radius: 5em;
+    padding: 1em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+  
+    padding: 1em;
+}
+
+.contact input,
+.contact textarea {
+    border: 1px solid var(--color2);
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 30em;
 }
 
 ::-webkit-scrollbar {
@@ -176,7 +199,52 @@ nav button:hover,
     background-color: var(--color2);
     border-radius: 8px;
 }
-::selection{
+
+::selection {
     background-color: var(--color2);
     color: #fff;
+}
+::-webkit-input-placeholder{
+    color: var(--color2);
+}
+
+@media (width<600px) {
+    nav {
+        display: none;
+    }
+
+    .home,
+    .about section,
+    .about img {
+        width: 100%;
+
+    }
+
+    .home div {
+        bottom: 15em;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .services,
+    .home,
+    .about img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .serviceIcons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serviceIcons button {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0;
+    }
 }
