@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--color1);
+    background-color: var(--color5);
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
     padding: 1em;
     justify-content: center;
     align-items: center;
-    background-color: var(--color1);
+    background-color: var(--color5);
 }
 
 nav ul {
@@ -192,7 +192,7 @@ nav button>a:hover {
 
 .contact svg:hover {
     cursor: pointer;
-    color: var(--color1);
+    color: var(--color5);
 }
 
 .contact h2 {
@@ -201,7 +201,7 @@ nav button>a:hover {
 }
 
 .contact p {
-    color: var(--color1);
+    color: var(--color2);
     font-weight: 900;
     margin-top: 3em;
 }
@@ -213,7 +213,7 @@ footer {
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--color1);
+    background-color: var(--color5);
     width: 12px;
     border-radius: 8px;
 }

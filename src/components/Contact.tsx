@@ -11,7 +11,7 @@ const Contact = () => {
         <a href="mailto:juarezgcjr@gmail.com" target='__blank'><BiLogoGmail /></a>
 
         <div>
-          <h2>Escritórios </h2>
+          <h2>Nossos escritórios </h2>
           <p>Rua Qualquer, 123 - Cidade, Estado</p>
           <p>Rua Qualquer, 123 - Cidade, Estado</p>
           <p>Rua Qualquer, 123 - Cidade, Estado</p>
