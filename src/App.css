@@ -208,7 +208,7 @@ nav button>a:hover {
 
 footer {
     text-align: center;
-    color: var(--color2);
+    color: #fff;
     font-weight: 900;
 }
 
@@ -229,20 +229,19 @@ footer {
 }
 
 
-@media (width<600px) {
+@media (width<800px) {
     nav {
         display: none;
     }
 
     .home,
     .about section,
-    .about img,
-    .contact {
+    .about img {
         width: 100%;
-
     }
 
     .home div {
+        margin-bottom: 15em;
         bottom: 15em;
     }
 
@@ -250,6 +249,8 @@ footer {
         flex-direction: column;
         padding: 0;
     }
+
+    
 
     .services,
     .home,
@@ -274,6 +275,7 @@ footer {
     .contact section {
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
 
     .contact svg {
@@ -281,4 +283,14 @@ footer {
     }
 
 
+}
+
+@media (width<600px) {
+    .home div {
+        margin-bottom: 2em;
+        bottom: 15em;
+    }
+    .about img {
+        margin-top: 5em;
+    }
 }
