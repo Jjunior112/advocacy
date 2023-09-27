@@ -236,7 +236,8 @@ footer {
 
     .home,
     .about section,
-    .about img {
+    .about img,
+    .contact {
         width: 100%;
 
     }
@@ -252,7 +253,8 @@ footer {
 
     .services,
     .home,
-    .about img {
+    .about img,
+    .contact {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
