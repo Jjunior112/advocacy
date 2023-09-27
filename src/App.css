@@ -14,8 +14,13 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     display: flex;
-    padding: 1em;
+    padding: .5em;
     justify-content: center;
     align-items: center;
     background-color: var(--color5);
@@ -78,6 +83,11 @@ nav button>a:hover {
     display: flex;
     flex-direction: column;
     list-style-type: none;
+
+}
+
+.showMenu li {
+    margin: 1em;
 }
 
 .home,
@@ -131,11 +141,14 @@ nav button>a:hover {
 
 .about section>h1,
 .services h1,
-.contact h1 {
+.contact h1,
+.clients h1 {
     text-align: center;
     color: var(--color2);
     text-transform: uppercase;
     font-weight: 900;
+    margin-top: 2.5em;
+
 }
 
 .about section>p {
@@ -147,6 +160,7 @@ nav button>a:hover {
     background-size: cover;
     opacity: 0.8;
     padding: 1em;
+    border-top-right-radius: 5em;
     border-bottom-left-radius: 5em;
 }
 
@@ -178,11 +192,27 @@ nav button>a:hover {
     color: var(--color2);
 }
 
+.clients {
+    padding: 1em;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 450px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-top-right-radius: 5em;
+}
+
 .contact {
     background-image: url('/contact.jpg');
     background-size: cover;
     opacity: 0.8;
     border-bottom-right-radius: 5em;
+    border-top-left-radius: 5em;
     padding: 1em;
 }
 
@@ -200,22 +230,22 @@ nav button>a:hover {
 }
 
 .contact svg {
-    color: var(--color2);
+    color: var(--color5);
     font-size: 5em;
 }
 
 .contact svg:hover {
     cursor: pointer;
-    color: var(--color5);
+    color: var(--color2);
 }
 
 .contact h2 {
-    color: var(--color2);
+    color: var(--color5);
     text-align: center;
 }
 
 .contact p {
-    color: var(--color2);
+    color: var(--color5);
     font-weight: 900;
     margin-top: 3em;
 }
@@ -294,6 +324,8 @@ footer {
         margin-bottom: 1em;
         padding: 0;
     }
+
+
 
     .contact section {
         flex-direction: column;
