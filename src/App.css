@@ -66,6 +66,20 @@ nav button>a:hover {
     color: #fff;
 }
 
+.mobile {
+    display: none;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.showMenu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
 .home,
 .about,
 .services,
@@ -231,7 +245,16 @@ footer {
 
 @media (width<800px) {
     nav {
+        justify-content: space-between;
+    }
+
+    .desktop {
         display: none;
+    }
+
+    .mobile {
+        display: block;
+
     }
 
     .home,
@@ -250,7 +273,7 @@ footer {
         padding: 0;
     }
 
-    
+
 
     .services,
     .home,
@@ -279,7 +302,7 @@ footer {
     }
 
     .contact svg {
-        margin-bottom: 1em;
+        margin-top: 1em;
     }
 
 
@@ -290,6 +313,7 @@ footer {
         margin-bottom: 2em;
         bottom: 15em;
     }
+
     .about img {
         margin-top: 5em;
     }
