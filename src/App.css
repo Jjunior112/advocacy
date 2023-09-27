@@ -207,6 +207,13 @@ nav button>a:hover {
     border-top-right-radius: 5em;
 }
 
+.slider span {
+    padding: 1em;
+    width: 400px;
+    color: #000000;
+    font-weight: 900;
+}
+
 .contact {
     background-image: url('/contact.jpg');
     background-size: cover;
