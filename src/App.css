@@ -5,6 +5,15 @@
     --color4: #D90000;
     --color5: #032840;
 }
+/* :root {
+    --color1: #007CF0;
+    --color2: #F09500;
+    --color3: #385570;
+    --color4: #9B7434;
+    --color5: #385570;
+} */
+
+
 
 body {
     margin: 0;
@@ -109,6 +118,7 @@ nav button>a:hover {
 
 .home div {
     position: absolute;
+    top: 40%;
     padding: 1em;
     bottom: 0;
     margin-bottom: 1em;
@@ -204,7 +214,6 @@ nav button>a:hover {
     height: 450px;
     margin-top: 3em;
     margin-bottom: 3em;
-    border-top-right-radius: 5em;
 }
 
 .slider span {
@@ -316,8 +325,11 @@ footer {
     .home,
     .about img,
     .contact {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+
     }
 
     .serviceIcons {
@@ -343,7 +355,7 @@ footer {
     .contact svg {
         margin-top: 1em;
     }
-
+  
 
 }
 
@@ -355,5 +367,15 @@ footer {
 
     .about img {
         margin-top: 5em;
+    }
+    .services,
+    .home,
+    .about img,
+    .contact {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
     }
 }
